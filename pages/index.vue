@@ -1,9 +1,19 @@
 <template>
-  <main>Main Section: Index</main>
+  <main>
+    <Hero />
+    <TextSection />
+  </main>
 </template>
 
 <script>
-export default {};
+import Hero from "@/components/structure/main/Hero";
+import TextSection from "@/components/structure/main/TextSection";
+export default {
+  components: {
+    Hero,
+    TextSection
+  }
+};
 </script>
 
 <style>

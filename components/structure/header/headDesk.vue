@@ -1,6 +1,6 @@
 <template>
   <nav class="top-navigation">
-    <div class="top-navigation">
+    <div class="top-navigation-sub">
       <div class="menu-item">About</div>
       <div class="menu-item">Blog</div>
       <div class="menu-item">Work</div>
@@ -20,6 +20,9 @@ export default {};
   border: 1px salmon dashed;
 }
 .top-navigation {
+  min-width: 100%;
+}
+.top-navigation-sub {
   border: white solid 1px;
 }
 
@@ -28,10 +31,23 @@ export default {};
 /* - - desktop */
 @media only screen and (min-width: 730px) {
   .top-navigation {
-    display: flex;
     width: 100%;
+  }
+  .top-navigation-sub {
+    display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+  .menu-item {
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .menu-item:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.5s ease-in;
   }
 }
 /* - - mobile */

@@ -14,4 +14,7 @@ export default {
 </script>
 
 <style>
+aside {
+  padding: 1rem;
+}
 </style>
