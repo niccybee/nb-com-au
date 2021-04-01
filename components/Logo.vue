@@ -1,5 +1,6 @@
 <template>
-  <svg width="130" height="77" viewBox="0 0 130 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <nuxt-link to="/">
+    <svg class="logo"  width="130" height="77" viewBox="0 0 130 77" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M99.3415 7.54783C99.5384 7.23837 99.9904 7.23912 100.186 7.54924L104.263 14.0056C104.366 14.1692 104.366 14.3777 104.262 14.5409L69.1508 69.7378C68.954 70.0472 68.502 70.0465 68.3062 69.7364L64.2294 63.28C64.1261 63.1164 64.1264 62.908 64.2303 62.7447L99.3415 7.54783Z"
       fill="#C4C4C4"
@@ -127,11 +128,17 @@
       stroke-width="3"
     />
   </svg>
+  </nuxt-link>
 </template>
 <style>
-.NuxtLogo {
+.logo {
   animation: 1s appear;
-  margin: auto;
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in;
 }
 
 @keyframes appear {

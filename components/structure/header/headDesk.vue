@@ -1,10 +1,10 @@
 <template>
   <nav class="top-navigation">
     <div class="top-navigation-sub">
-      <div class="menu-item">About</div>
-      <div class="menu-item">Blog</div>
-      <div class="menu-item">Work</div>
-      <div class="menu-item">CV</div>
+      <nuxt-link to="/" class="menu-item">About</nuxt-link>
+      <nuxt-link to="/" class="menu-item">Blog</nuxt-link>
+      <nuxt-link to="/" class="menu-item">Work</nuxt-link>
+      <nuxt-link to="/" class="menu-item">CV</nuxt-link>
     </div>
     <div class="menu-navigation"></div>
   </nav>
@@ -40,14 +40,25 @@ export default {};
     padding-left: 16%;
     padding-right: 16%;
   }
+  .top-navigation-sub a {
+    color: var(--text-dark);
+    opacity: 0.5;
+    transition: all 0.2s ease-out;
+    font-weight: 500;
+  }
+  .top-navigation-sub:hover a {
+    opacity: 1;
+    transition: all 0.2s ease-in;
+  }
   .menu-item {
     padding: 1rem;
     text-decoration: none;
     cursor: pointer;
+    transition: text-decoration 0.5s ease-in;
   }
   .menu-item:hover {
     text-decoration: underline;
-    transition: text-decoration 0.5s ease-in;
+    
   }
 }
 /* - - mobile */

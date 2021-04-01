@@ -30,6 +30,18 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
+/* CSS Variables */
+:root {
+  --background-color: #F8FCFE;
+  --highlight-100: #E0ECF3;
+  --highlight-900: #54798E;
+  --text-dark: #282727;
+  --text-dark-2: #504E4E;
+  --text-light: #FFFFFF;
+
+}
+
+
 /* debugging */
 header,
 aside,
@@ -39,28 +51,28 @@ footer {
 }
 .desktop-header {
   z-index: 1;
-  background: lightblue;
+  /* background: lightblue; */
 }
 /* - grid areas labelling */
 header {
   grid-area: header;
-  background-color: blue;
+  /* background-color: blue; */
 }
 footer {
   grid-area: footer;
-  background-color: red;
+  /* background-color: red; */
 }
 main {
   grid-area: main;
-  background-color: green;
+  /* background-color: green; */
 }
 .left-aside {
   grid-area: left-aside;
-  background-color: yellow;
+  /* background-color: yellow;  */
 }
 .right-aside {
   grid-area: right-aside;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 /* styling -> */
@@ -74,8 +86,9 @@ h2,
 h3,
 h4,
 h5,
-p {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+p,
+nav {
+  font-family: 'Avenir Next',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5rem;
 }
@@ -89,7 +102,7 @@ p {
   .wrap-all {
     display: grid;
     width: 98vw;
-
+    background-color: var(--background-color);
     grid-template-columns: 15% 35% 35% 15%;
     grid-template-rows: auto;
     grid-template-areas:
