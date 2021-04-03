@@ -36,8 +36,8 @@ export default {
 .button-highlight {
     background-color: var(--highlight-900);
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -6px;
+    right: -6px;
     width: 6px;
     height: 6px;
     border-radius: 100%;

@@ -1,17 +1,17 @@
 <template>
-  <nav class="top-navigation">
-    <div class="top-navigation-sub">
-      <nuxt-link to="/" class="menu-item">About</nuxt-link>
-      <nuxt-link to="/" class="menu-item">Blog</nuxt-link>
-      <nuxt-link to="/" class="menu-item">Work</nuxt-link>
-      <nuxt-link to="/" class="menu-item">CV</nuxt-link>
-    </div>
+  <div class="top-navigation">
+    <nav-links/>
     <div class="menu-navigation"></div>
-  </nav>
+  </div>
 </template>
 
 <script>
-export default {};
+import NavLinks from "@/components/add-ins/NavLinks"
+export default {
+  components: {
+    NavLinks
+  }
+};
 </script>
 
 <style>
