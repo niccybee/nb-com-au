@@ -2,9 +2,29 @@
 
 > NicBenson.com.au
 
+## Todo List
+
+~~TODO: Mobile menu ~~
+
+- TODO: Sub-menu items
+
+TODO: Blog Page - with dummy text
+
+TODO: social icons for side buttons
+
+Pages:
+TODO: About;
+TODO: Blog;
+TODO: Work;
+TODO: CV;
+
+### DESIGN TODO
+
+TODO: fix logo
+
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 
