@@ -27,4 +27,9 @@ aside {
   justify-content: flex-start;
 
 }
+@media only screen and (max-width: 730px) {
+  .left-aside {
+    display: none;
+  }
+}
 </style>
