@@ -16,7 +16,7 @@ import HeadDesk from "@/components/structure/header/headDesk.vue";
 import HeadMob from "@/components/structure/header/headMob.vue";
 import leftAside from "@/components/structure/aside/leftAside.vue";
 import rightAside from "@/components/structure/aside/rightAside.vue";
-import Foot from "@/components/structure/Footer/Foot.vue";
+import Foot from "@/components/structure/footer/Foot.vue";
 export default {
   components: {
     HeadDesk,
