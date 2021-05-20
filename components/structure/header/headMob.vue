@@ -1,5 +1,6 @@
 <template>
-  <nav class="mobile-navigation">
+<div class="mobile-navigation">
+    <nav >
     <div class="mobile-logo">
       <Logo />
     </div>
@@ -17,6 +18,7 @@
       </div>
     </transition>
   </nav>
+</div>
 </template>
 
 <script>
