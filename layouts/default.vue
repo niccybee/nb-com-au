@@ -43,12 +43,15 @@ export default {
 
 
 /* debugging */
-header,
+/* header,
 aside,
 main,
 footer {
   border: dashed 1px purple;
-}
+} */
+
+
+/* MY STYLES START HERE */
 .desktop-header {
   z-index: 1;
   /* background: lightblue; */
