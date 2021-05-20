@@ -9,6 +9,10 @@
 
 ### Current items
 
+### CMS data changes:
+
+- TODO: Hero Section and TextSection need to become widgets in config.yml
+
 - TODO: Make Hero CTA have ability to run function or go straight to link depending on input
 - TODO: Left aside to appear at bottom on mobile, or in nav menu?
 

@@ -1,6 +1,6 @@
 <template>
   <aside class="right-aside"> 
-    <cta-button/>
+    <cta-button :button_name="buttonType" :button_link="buttonLink" :target="buttonTarget"/>
   </aside>
 </template>
 
@@ -10,6 +10,13 @@ import CtaButton from '@/components/add-ins/CtaButton'
 export default {
   components: {
     CtaButton
+  },
+  data () {
+    return {
+      buttonType: 'right_corner_main',
+      buttonLink: 'mailto:testemail@mailinator.com',
+      buttonTarget: '_blank'
+    }
   }
 };
 </script>

@@ -1,23 +1,22 @@
 <template>
   <div class="button-container">
-      <div class="button-highlight"></div>
-      <button class="primary-button">Contact</button>
+      <div class="button-highlight" v-if="button_name === 'right_corner_main'"></div>
+      <a class="primary-button" :target="target" :href="button_link">Contact</a>
   </div>
 </template>
 
 <script>
 export default {
-
+  props: ['button_name', 'button_link', 'target' ]
 }
 </script>
 
 <style>
 .button-container {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 .primary-button {
   border: solid 1px var(--text-dark-2);
-  
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
@@ -27,6 +26,7 @@ export default {
   background: none;
   cursor: pointer;
   color: var(--text-dark-2);
+  text-decoration: none;
 }
 .primary-button:hover {
   color: white;
