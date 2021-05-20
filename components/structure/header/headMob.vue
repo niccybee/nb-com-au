@@ -1,5 +1,4 @@
 <template>
-<div >
     <nav class="mobile-navigation">
     <div class="mobile-logo">
       <Logo />
@@ -18,7 +17,6 @@
       </div>
     </transition>
   </nav>
-</div>
 </template>
 
 <script>
@@ -43,6 +41,13 @@ export default {
 </script>
 
 <style>
+@media only screen and (min-width: 730px) {
+  .mobile-navigation {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 .mobile-navigation {
   display: flex;
   align-items: center;
