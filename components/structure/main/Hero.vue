@@ -1,26 +1,28 @@
 <template>
-  <section class="hero">
+  <section class="hero" :style="bg_image ? `background-image: url(${bg_image})` :  '' ">
     <h1>{{title}}</h1>
     <p>{{copy}}</p>
     <div v-if="cta_text">
       <CtaButton 
         :button_name="cta.name" 
-        :button_link="cta.link" 
+        :button_text="cta_text"
+        :button_link="cta_link" 
         :target="cta.target" />
     </div>
   </section>
 </template>
 
 <script>
-// import CtaButton from '@/components/add-ins/CtaButton'
+import CtaButton from '@/components/add-ins/CtaButton'
 export default {
-  props: ['title', 'copy', 'cta_text', 'cta_link'],
+  components: {
+    CtaButton
+  },
+  props: ['title', 'copy', 'cta_text', 'cta_link', 'bg_image'],
   data () {
     return {
       cta: {
         name: 'hero',
-        link: '/blog',
-        button_text: 'view blogs',
         target: '_self'
       }
     }
@@ -35,5 +37,6 @@ export default {
   flex-direction: column;
   padding: 4rem;
   align-items: center;
+  background-repeat: no-repeat;
 }
 </style>

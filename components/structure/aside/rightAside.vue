@@ -1,6 +1,10 @@
 <template>
   <aside class="right-aside"> 
-    <cta-button :button_name="buttonType" :button_link="buttonLink" :target="buttonTarget"/>
+    <cta-button 
+      :button_name="buttonType" 
+      :button_link="buttonLink" 
+      :button_text="buttonText"
+      :target="buttonTarget"/>
   </aside>
 </template>
 
@@ -15,6 +19,7 @@ export default {
     return {
       buttonType: 'right_corner_main',
       buttonLink: 'mailto:testemail@mailinator.com',
+      buttonText: 'Contact',
       buttonTarget: '_blank'
     }
   }

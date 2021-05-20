@@ -16,15 +16,13 @@ export default {
 
 <style>
 /* debugging */
-.menu-item {
+/* .menu-item {
   border: 1px salmon dashed;
-}
+} */
 .top-navigation {
   min-width: 100%;
 }
-.top-navigation-sub {
-  border: white solid 1px;
-}
+
 
 /* actual css */
 /* - layout */
@@ -39,6 +37,11 @@ export default {
     justify-content: space-around;
     padding-left: 16%;
     padding-right: 16%;
+    padding-bottom: 3rem;
+    transition: background 0.2s ease-in;
+  }
+  .top-navigation-sub:hover {
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
   }
   .top-navigation-sub a {
     color: var(--text-dark);

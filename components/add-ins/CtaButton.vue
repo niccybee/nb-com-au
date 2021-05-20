@@ -1,13 +1,13 @@
 <template>
   <div class="button-container">
       <div class="button-highlight" v-if="button_name === 'right_corner_main'"></div>
-      <a class="primary-button" :target="target" :href="button_link">Contact</a>
+      <a class="primary-button" :target="target" :href="button_link">{{button_text}}</a>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['button_name', 'button_link', 'target' ]
+  props: ['button_name', 'button_link', 'button_text', 'target' ]
 }
 </script>
 
@@ -30,6 +30,7 @@ export default {
 }
 .primary-button:hover {
   color: white;
+  background-color: var(--highlight-900);
   transition: all 0.3s ease-in-out;
   border: solid white 1px;
 }

@@ -9,6 +9,8 @@
 
 ### Current items
 
+TODO: Inline Mailto form inside the site
+
 ### CMS data changes:
 
 - TODO: Hero Section and TextSection need to become widgets in config.yml
@@ -18,16 +20,28 @@
 
 - TODO: Sub-menu items
 
-TODO: Blog Page - with dummy text
+~~TODO: Blog Page - with dummy text~~
+
+### Lighthouse changes
+
+- TODO: Fix link name on the n logo - aria label perhaps?
 
 ### Quick ones
 
 TODO: social icons for side buttons
+TODO: Add blog mobile responsiveness
+TODO: Blog list item pretty dates - dayjs?
 
 ### Pages:
 
 TODO: About;
 TODO: Blog;
+
+- TODO: Blog Article
+- TODO: Blog Container
+- TODO: Blog Search Component
+- Blog 'Jump to' section should be in the 'aside left' component
+
 TODO: Work;
 TODO: CV;
 

@@ -27,8 +27,8 @@ export default {
       HeroContents: {
         title: "Welcome",
         copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam iusto ea cupiditate voluptatem vero fuga eum similique culpa in nesciunt quia accusantium quae, molestiae fugit laudantium esse laborum labore.",
-        cta_link: "google.com",
-        cta_text: "Google It"
+        cta_link: "/blog",
+        cta_text: "View All Blogs"
       }
     }
   }
