@@ -5,14 +5,23 @@
 ## Todo List
 
 ~~TODO: Mobile menu ~~
+~~- TODO: FIX: Mobile menu on prod~~
+
+### Current items
+
+- TODO: Make Hero CTA have ability to run function or go straight to link depending on input
+- TODO: Left aside to appear at bottom on mobile, or in nav menu?
 
 - TODO: Sub-menu items
 
 TODO: Blog Page - with dummy text
 
+### Quick ones
+
 TODO: social icons for side buttons
 
-Pages:
+### Pages:
+
 TODO: About;
 TODO: Blog;
 TODO: Work;

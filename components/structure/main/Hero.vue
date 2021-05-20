@@ -1,12 +1,17 @@
 <template>
   <section class="hero">
-    <h1>Welcome</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti atque porro odit amet deserunt provident voluptatibus. Similique veritatis et tenetur officiis consequuntur, velit, repellendus necessitatibus praesentium nemo eaque eius?</p>
+    <h1>{{title}}</h1>
+    <p>{{copy}}</p>
+    <div v-if="cta_text">
+      <a :href="cta_link">{{cta_text}}</a>
+    </div>
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ['title', 'copy', 'cta_text', 'cta_link']
+};
 </script>
 
 <style>

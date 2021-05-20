@@ -117,7 +117,6 @@ nav {
   .desktop-header {
     position: fixed;
     top: 0;
-
     left: 0;
   }
   .mobile-header {
@@ -150,9 +149,6 @@ nav {
   .desktop-header,
   .left-aside {
     display: none;
-  }
-  .mobile-header {
-    background: cornflowerblue;
   }
   .hero h1 {
     font-size: 36px;

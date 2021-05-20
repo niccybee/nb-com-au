@@ -11,7 +11,20 @@ collections:
     folder: 'content/blog'
     format: 'frontmatter'
     create: true
-    slug: '{{slug}}-{{year}}-{{month}}-{{day}}'
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'pages'
+    folder: 'content/page'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:

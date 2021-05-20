@@ -1,6 +1,10 @@
 <template>
-  <main>
-    <Hero />
+  <main class="home">
+    <Hero 
+      :title="HeroContents.title" 
+      :copy="HeroContents.copy" 
+      :cta_link="HeroContents.cta_link" 
+      :cta_text="HeroContents.cta_text" />
     <TextSection />
   </main>
 </template>
@@ -17,6 +21,16 @@ export default {
   components: {
     Hero,
     TextSection
+  },
+  data () {
+    return {
+      HeroContents: {
+        title: "Welcome",
+        copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam iusto ea cupiditate voluptatem vero fuga eum similique culpa in nesciunt quia accusantium quae, molestiae fugit laudantium esse laborum labore.",
+        cta_link: "google.com",
+        cta_text: "Google It"
+      }
+    }
   }
 };
 </script>
