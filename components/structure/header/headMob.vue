@@ -1,6 +1,6 @@
 <template>
-<div class="mobile-navigation">
-    <nav >
+<div >
+    <nav class="mobile-navigation">
     <div class="mobile-logo">
       <Logo />
     </div>
