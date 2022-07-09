@@ -4,7 +4,7 @@
       <Logo />
     </div>
     <div class="nav-icon-container">
-      <div class="nav-icon" @click="openNav">
+      <div class="nav-icon" @click="toggleNav">
       <span :class="navIsOpen ? 'menu-icon top-active' : 'menu-icon'"></span>
       <span :class="navIsOpen ? 'menu-icon middle-active' : 'menu-icon'"></span>
       <span :class="navIsOpen ? 'menu-icon bottom-active' : 'menu-icon'"></span>
@@ -13,7 +13,7 @@
     </div>
     <transition name="fade">
       <div :class="navIsOpen ? 'mobile-menu mobile-menu-active' : 'mobile-menu'" v-if="navIsOpen">
-        <nav-links />
+        <nav-links @click="closeNav" />
       </div>
     </transition>
   </nav>
@@ -33,8 +33,11 @@ export default {
     }
   },
   methods: {
-    openNav() {
+    toggleNav() {
       this.navIsOpen = !this.navIsOpen
+    },
+    closeNav() {
+      this.navIsOpen = false
     }
   }
 };
@@ -53,9 +56,10 @@ export default {
   align-items: center;
   justify-content: space-between;
   max-height: 2rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 .mobile-menu {
+  padding-top: 4rem;
   position: absolute;
   left: 0;
   top: 0;
@@ -64,7 +68,7 @@ export default {
   background: var(--highlight-100);
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
-
+  z-index: 100;
 }
 .mobile-menu-active {
   opacity: 1;
@@ -101,14 +105,14 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 3;
+  z-index: 101;
   
 }
 .menu-icon {
   width: 100%;
   background: var(--text-dark);
-  height: 0.5rem;
-  border-radius: 3px;
+  height: 0.2rem;
+  border-radius: 0.2rem;
   transform: rotate(0deg);
   transform-origin: 0%;
   transition: all 0.5s ease-in;

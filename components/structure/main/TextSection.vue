@@ -1,12 +1,14 @@
 <template>
   <section class="text-section">
-    <h2></h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sunt voluptates aperiam mollitia debitis ducimus corporis tempora, nemo hic quis fugit possimus adipisci veniam beatae quia accusamus officiis dolore sequi.</p>
+    <h2>{{header}}</h2>
+    <p>{{text}}</p>
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ['header', 'text']
+};
 </script>
 
 <style>

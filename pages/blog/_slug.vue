@@ -1,10 +1,10 @@
 <template>
   <main class="blog-article">
       <article>
-          <hero :title="page.title" :copy="page.description" cta_link="#content" cta_text="Read"/>           
+          <hero :title="page.title" cta_link="#content" cta_text="Read"/>           
           <p>Jump to: </p>
           <ul>
-              <li v-for="item in page.toc"><a :href="`#${item.id}}`">{{item.text}}</a></li>
+              <li v-for="item in page.toc" :key="item"><a :href="`#${item.id}}`">{{item.text}}</a></li>
           </ul>
           <nuxt-content id="content" :document="page"/>
       </article>
@@ -37,6 +37,8 @@ export default {
 </script>
 
 <style>
+@imoprt '../assets/type.css'
+
 .blog-article h1 {
     text-align: center;
 }
@@ -44,9 +46,12 @@ export default {
     background: white; 
     border-radius: 0.3rem;
     padding: 2rem;
+    min-height:100vh;
 }
 .nuxt-content h1 {
     font-size: 3rem;
 }
 
 </style>
+
+/*           <!-- :copy="page.description"  -->s */

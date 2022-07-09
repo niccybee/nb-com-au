@@ -36,11 +36,25 @@ export default {
   --highlight-100: #E0ECF3;
   --highlight-900: #54798E;
   --text-dark: #282727;
-  --text-dark-2: #504E4E;
+  --text-dark-2: #403f3f;
   --text-light: #FFFFFF;
 
 }
 
+/* border-box reset */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* smooth scroll */
+
+html {
+  scroll-behavior: smooth;
+}
 
 /* debugging */
 /* header,
@@ -82,8 +96,9 @@ main {
 /* - fonts */
 
 h1 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
+  font-family: "DM Serif Text", "Playfair Display", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
+  
 }
 h2,
 h3,
@@ -91,10 +106,15 @@ h4,
 h5,
 p,
 a,
-nav {
+nav,
+ul, ol, li {
   font-family: 'Avenir Next',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5rem;
+  color: var(--text-dark)
+}
+p, li {
+  color: var(--text-dark-2)
 }
 /* - layout */
 /* - - all  */
@@ -129,8 +149,8 @@ nav {
     font-size: 96px;
   }
   aside {
-    position: fixed;
-    min-width: 15%;
+    /* position: fixed;
+    width: 15%; */
     z-index: 2;
     /* padding-top: 3.5rem; */
   }
@@ -149,12 +169,33 @@ nav {
 
 /* - - mobile */
 @media only screen and (max-width: 730px) {
+  .wrap-all {
+    display: grid;
+    width: 98vw;
+    background-color: var(--background-color);
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "right-aside"
+      "footer"
+      ;
+  }
   .desktop-header,
   .left-aside {
     display: none;
   }
   .hero h1 {
     font-size: 36px;
+  }
+  .hero {
+    padding: 2rem;
+  }
+  .right-aside {
+    width: 100%;
+    background: lightgoldenrodyellow;
+    position: static;
   }
 }
 </style>

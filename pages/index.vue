@@ -1,11 +1,12 @@
 <template>
   <main class="home">
-    <Hero 
-      :title="HeroContents.title" 
-      :copy="HeroContents.copy" 
-      :cta_link="HeroContents.cta_link" 
-      :cta_text="HeroContents.cta_text" />
-    <TextSection />
+    <Hero
+      :title="HeroContents.title"
+      :copy="HeroContents.copy"
+      :cta_link="HeroContents.cta_link"
+      :cta_text="HeroContents.cta_text"
+    />
+    <!-- <TextSection :text="textSect.header" :header="textSect.text" /> -->
   </main>
 </template>
 
@@ -15,25 +16,29 @@ import TextSection from "@/components/structure/main/TextSection";
 export default {
   head() {
     return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+      script: [{ src: "https://identity.netlify.com/v1/netlify-identity-widget.js" }],
     };
   },
   components: {
     Hero,
-    TextSection
+    TextSection,
   },
-  data () {
+  data() {
     return {
       HeroContents: {
         title: "Welcome",
-        copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam iusto ea cupiditate voluptatem vero fuga eum similique culpa in nesciunt quia accusantium quae, molestiae fugit laudantium esse laborum labore.",
+        copy:
+          "Personal site of Nicholas Benson. <br/> I like playing around with front-end development– especially Vue.js.",
         cta_link: "/blog",
-        cta_text: "View All Blogs"
-      }
-    }
-  }
+        cta_text: "View All Blogs",
+      },
+      textSect: {
+        header: "This is the new header",
+        text: "This is the new text section",
+      },
+    };
+  },
 };
 </script>
 
-<style>
-</style>
+<style></style>

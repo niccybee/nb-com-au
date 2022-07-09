@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
+    "matter-js": "^0.18.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {}
