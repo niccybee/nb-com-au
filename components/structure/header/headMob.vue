@@ -13,7 +13,7 @@
     </div>
     <transition name="fade">
       <div :class="navIsOpen ? 'mobile-menu mobile-menu-active' : 'mobile-menu'" v-if="navIsOpen">
-        <nav-links @click="closeNav" />
+        <nav-links />
       </div>
     </transition>
   </nav>

@@ -23,8 +23,8 @@ export default {
     HeadMob,
     leftAside,
     rightAside,
-    Foot
-  }
+    Foot,
+  },
 };
 </script>
 
@@ -32,13 +32,12 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
 /* CSS Variables */
 :root {
-  --background-color: #F8FCFE;
-  --highlight-100: #E0ECF3;
-  --highlight-900: #54798E;
+  --background-color: #f8fcfe;
+  --highlight-100: #e0ecf3;
+  --highlight-900: #54798e;
   --text-dark: #282727;
   --text-dark-2: #403f3f;
-  --text-light: #FFFFFF;
-
+  --text-light: #ffffff;
 }
 
 /* border-box reset */
@@ -46,7 +45,9 @@ export default {
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -63,7 +64,6 @@ main,
 footer {
   border: dashed 1px purple;
 } */
-
 
 /* MY STYLES START HERE */
 .desktop-header {
@@ -96,9 +96,9 @@ main {
 /* - fonts */
 
 h1 {
-  font-family: "DM Serif Text", "Playfair Display", Georgia, "Times New Roman", Times, serif;
+  font-family: "DM Serif Text", "Playfair Display", Georgia, "Times New Roman", Times,
+    serif;
   font-weight: 700;
-  
 }
 h2,
 h3,
@@ -107,14 +107,17 @@ h5,
 p,
 a,
 nav,
-ul, ol, li {
-  font-family: 'Avenir Next',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ul,
+ol,
+li {
+  font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5rem;
-  color: var(--text-dark)
+  color: var(--text-dark);
 }
-p, li {
-  color: var(--text-dark-2)
+p,
+li {
+  color: var(--text-dark-2);
 }
 /* - layout */
 /* - - all  */
@@ -180,7 +183,7 @@ p, li {
       "main"
       "right-aside"
       "footer"
-      ;
+      "left-aside";
   }
   .desktop-header,
   .left-aside {

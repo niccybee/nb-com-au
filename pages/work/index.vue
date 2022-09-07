@@ -1,6 +1,6 @@
 <template>
   <main>
-    <hero title="Work" copy="This is all my work!">
+    <hero title="Work" copy="Some recent work">
       <gallery :items="items"></gallery>
     </hero>
   </main>
@@ -25,8 +25,8 @@ export default {
         },
         {
           id: 1,
-          title: "This is all my work",
-          image_url: "https://placehold.it/",
+          title: "Mr Yum Clone in Vue",
+          image_url: "https://paray-inn.surge.sh/",
         },
         {
           id: 2,
