@@ -30,8 +30,8 @@ export default {
         },
         {
           id: 2,
-          title: "This is all my work",
-          image_url: "https://placehold.it/",
+          title: "Resume Building App (WIP)",
+          image_url: "https://github.com/niccybee/resume-app",
         },
 
         {
