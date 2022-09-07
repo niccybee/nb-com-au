@@ -29,7 +29,8 @@ export default {
         title: "About Me",
         copy:
           "Digital Marketing Manager, with 5+ years experience in delivering high-converting lead-generation and sales campaigns. Passion for learning new technologies and creating strategies for business success.",
-        cta_link: "#about-me",
+        cta_link:
+          "https://github.com/niccybee/nb-com-au/blob/bring-cv-over-from-app/assets/CV-Sept-22.pdf",
         cta_text: "CV",
       },
       textSect: {
