@@ -20,24 +20,24 @@ export default {
         {
           id: 0,
           title: "Sunday Quiz ☀️",
-          image_url: "https://placehold.it/",
+          // image_url: "https://placehold.it/",
           url: "https://sundayquiz.com.au",
         },
         {
           id: 1,
           title: "Mr Yum Clone in Vue",
-          image_url: "https://paray-inn.surge.sh/",
+          url: "https://paray-inn.surge.sh/",
         },
         {
           id: 2,
           title: "This is all my work",
-          image_url: "https://placehold.it/",
+          url: "https://placehold.it/",
         },
 
         {
           id: 1,
-          title: "This is all my work",
-          image_url: "https://placehold.it/",
+          title: "Folio",
+          url: "/work/folio",
         },
         {
           id: 2,
