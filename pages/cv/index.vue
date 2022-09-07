@@ -76,7 +76,7 @@ export default {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur qui modi perspiciatis praesentium eos velit voluptatum!",
           highlights: ["One", "Two", "Three"],
         },
-                {
+        {
           id: 2,
           jobTitle: "Digital Marketing Specialist",
           company: "GJ Gardner Homes, Bundoora (NBWeb)",
