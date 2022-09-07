@@ -20,7 +20,7 @@ export default {
   },
   components: {
     Hero,
-    TextSection,
+    TextSection,,
   },
   data() {
     return {
