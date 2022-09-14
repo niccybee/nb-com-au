@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="icon-container">
     <svg
-      height="32"
+      class="icon"
+      height="1.2rem"
       aria-hidden="true"
       viewBox="0 0 16 16"
       version="1.1"
-      width="32"
+      width="1.2rem"
       data-view-component="true"
-      class="octicon octicon-mark-github v-align-middle"
     >
       <path
         fill-rule="evenodd"
@@ -16,3 +16,5 @@
     </svg>
   </div>
 </template>
+
+<style></style>
