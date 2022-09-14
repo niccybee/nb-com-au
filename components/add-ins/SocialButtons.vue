@@ -6,7 +6,9 @@
     <a class="social-button" href="https://github.com/niccybee"
       ><span><IconGitHub /></span
     ></a>
-    <!-- <a class="social-button" href="#"><span>3</span></a> -->
+    <a class="social-button" href="#"
+      ><span><IconLinkedin /></span
+    ></a>
     <!-- <a class="social-button" href="#"><span>4</span></a> -->
   </section>
 </template>
@@ -14,9 +16,10 @@
 <script>
 import IconGitHub from "../icons/IconGitHub.vue";
 import IconTwitter from "../icons/IconTwitter.vue";
+import IconLinkedin from "../icons/IconLinkedin.vue";
 
 export default {
-  components: { IconGitHub, IconTwitter },
+  components: { IconGitHub, IconLinkedin, IconTwitter },
 };
 </script>
 
