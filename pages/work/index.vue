@@ -25,29 +25,29 @@ export default {
         },
         {
           id: 1,
-          title: "Mr Yum Clone in Vue",
+          title: "Mr Yum Clone in Vue (WIP)",
           url: "https://paray-inn.surge.sh/",
         },
         {
           id: 2,
-          title: "This is all my work",
-          url: "https://placehold.it/",
+          title: "Mobile Course Activity (WIP)",
+          url: "http://activity-test.surge.sh/",
         },
 
         {
-          id: 1,
-          title: "Folio",
+          id: 3,
+          title: "Recent Design Folio",
           url: "/work/folio",
         },
         {
-          id: 2,
+          id: 4,
           title: "This is all my work",
           image_url: "https://placehold.it/",
         },
         {
-          id: 2,
+          id: 5,
           title: "This is all my work",
-          image_url: "https://placehold.it/",
+          url: "https://placehold.it/",
         },
       ],
     };
