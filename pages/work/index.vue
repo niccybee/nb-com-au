@@ -39,16 +39,16 @@ export default {
           title: "Recent Design Folio",
           url: "/work/folio",
         },
-        {
-          id: 4,
-          title: "This is all my work",
-          image_url: "https://placehold.it/",
-        },
-        {
-          id: 5,
-          title: "This is all my work",
-          url: "https://placehold.it/",
-        },
+        // {
+        //   id: 4,
+        //   title: "This is all my work",
+        //   image_url: "https://placehold.it/",
+        // },
+        // {
+        //   id: 5,
+        //   title: "This is all my work",
+        //   url: "https://placehold.it/",
+        // },
       ],
     };
   },

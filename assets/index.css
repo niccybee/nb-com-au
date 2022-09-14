@@ -1,1 +1,53 @@
-@import 'type'
+/* border-box reset */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* smooth scroll */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* debugging */
+/* header,
+aside,
+main,
+footer {
+  border: dashed 1px purple;
+} */
+
+/* MY STYLES START HERE */
+.desktop-header {
+  z-index: 1;
+  /* background: lightblue; */
+}
+/* - grid areas labelling */
+header {
+  grid-area: header;
+  /* background-color: blue; */
+}
+footer {
+  grid-area: footer;
+  /* background-color: red; */
+}
+main {
+  grid-area: main;
+  /* background-color: green; */
+}
+.wrap-all {
+  min-height: 99vh;
+}
+.left-aside {
+  grid-area: left-aside;
+  /* background-color: yellow;  */
+}
+.right-aside {
+  grid-area: right-aside;
+  /* background-color: yellow; */
+}

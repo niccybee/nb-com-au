@@ -55,7 +55,10 @@ export default {
   .hero {
     padding: 2rem;
     min-height: 60vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .hero h1 {
     font-size: 36px;

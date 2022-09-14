@@ -60,7 +60,6 @@ export default {
   max-height: 2rem;
   padding: 2rem;
   height: auto;
-  background: green;
 }
 .mobile-menu {
   padding-top: 4rem;
@@ -128,9 +127,6 @@ export default {
 }
 .middle-active {
   transform: translateX(1000px);
-}
-.mobile-logo {
-  /* max-width: 3rem; */
 }
 .mobile-logo > svg {
   height: 1rem;

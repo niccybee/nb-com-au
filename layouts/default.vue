@@ -29,16 +29,16 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap"); */
 /* CSS Variables */
-:root {
+/* :root {
   --background-color: #f8fcfe;
   --highlight-100: #e0ecf3;
   --highlight-900: #54798e;
   --text-dark: #282727;
   --text-dark-2: #403f3f;
   --text-light: #ffffff;
-}
+} */
 
 /* border-box reset */
 
@@ -96,8 +96,7 @@ main {
 /* - fonts */
 
 h1 {
-  font-family: "DM Serif Text", "Playfair Display", Georgia, "Times New Roman", Times,
-    serif;
+  /* font-family:  */
   font-weight: 700;
 }
 h2,
