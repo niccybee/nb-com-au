@@ -45,12 +45,12 @@ export default {
         rel: "preconnect",
         href: "https://fonts.gstatic.com",
         crossorigin: "true"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          'https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet'
       }
-      // {
-      //   rel: "stylesheet",
-      //   href:
-      //     'https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet'
-      // }
     ]
   },
   /*

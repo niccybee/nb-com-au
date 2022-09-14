@@ -34,7 +34,7 @@ export default {
 
 <style>
 .hero h1 {
-  margin-bottom: calc();
+  margin-bottom: 0.5rem;
 }
 
 @media only screen and (min-width: 729px) {

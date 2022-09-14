@@ -15,7 +15,7 @@
         :class="navIsOpen ? 'mobile-menu mobile-menu-active' : 'mobile-menu'"
         v-if="navIsOpen"
       >
-        <nav-links @click="closeNav" />
+        <nav-links />
       </div>
     </transition>
   </nav>
@@ -33,6 +33,11 @@ export default {
     return {
       navIsOpen: false,
     };
+  },
+  watch: {
+    $route() {
+      this.closeNav();
+    },
   },
   methods: {
     toggleNav() {
@@ -95,8 +100,8 @@ export default {
 
 .nav-icon-container {
   position: relative;
-  width: 3rem;
-  height: 3rem;
+  width: 2.6rem;
+  height: 2.6rem;
 }
 .nav-icon {
   position: absolute;
@@ -112,7 +117,7 @@ export default {
 .menu-icon {
   width: 100%;
   background: var(--text-dark);
-  height: 0.3rem;
+  height: 0.25rem;
   border-radius: 0.2rem;
   transform: rotate(0deg);
   transform-origin: 0%;
