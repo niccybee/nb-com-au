@@ -33,18 +33,33 @@ export default {
 </script>
 
 <style>
+.hero h1 {
+  margin-bottom: calc();
+}
+
 @media only screen and (min-width: 729px) {
   .hero {
-    min-height: 85vh;
-    /* background-color: salmon; */
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
-    padding: 4rem;
+    padding: 2rem;
     align-items: center;
+    justify-content: center;
     background-repeat: no-repeat;
+  }
+  .hero h1 {
+    font-size: 96px;
   }
 }
 @media only screen and (max-width: 730px) {
+  .hero {
+    padding: 2rem;
+    min-height: 60vh;
+    justify-content: center;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
   .hero {
     padding: 2rem;
   }

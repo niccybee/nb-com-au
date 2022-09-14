@@ -24,6 +24,4 @@ export default {
   background-color: none;
   width: 100%;
 }
-.folio-loading {
-}
 </style>

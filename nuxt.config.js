@@ -45,12 +45,12 @@ export default {
         rel: "preconnect",
         href: "https://fonts.gstatic.com",
         crossorigin: "true"
-      },
-      {
-        rel: "stylesheet",
-        href:
-          'https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet'
       }
+      // {
+      //   rel: "stylesheet",
+      //   href:
+      //     'https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet'
+      // }
     ]
   },
   /*
@@ -60,9 +60,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [
-    // 'assets/type.css'
-  ],
+  css: ["./assets/type.css"],
   /*
    ** Plugins to load before mounting the App
    */
@@ -71,7 +69,16 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  // buildModules: ["@nuxtjs/google-fonts"],
+  // googleFonts: {
+  //   families: {
+  //     "DM+Serif+Text": true,
+  //     Raleway: {
+  //       wght: [100, 400],
+  //       ital: [100]
+  //     }
+  //   }
+  // },
 
   target: "static",
   /*

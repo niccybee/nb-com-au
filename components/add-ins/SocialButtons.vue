@@ -6,8 +6,8 @@
     <a class="social-button" href="https://github.com/niccybee"
       ><span><IconGitHub /></span
     ></a>
-    <a class="social-button" href="#"><span>3</span></a>
-    <a class="social-button" href="#"><span>4</span></a>
+    <!-- <a class="social-button" href="#"><span>3</span></a> -->
+    <!-- <a class="social-button" href="#"><span>4</span></a> -->
   </section>
 </template>
 
@@ -55,5 +55,16 @@ export default {
 .icon-container {
   display: flex;
   place-items: center center;
+}
+@media only screen and (max-width: 730px) {
+  .social-buttons {
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .social-button {
+    margin-right: 1rem;
+  }
 }
 </style>

@@ -1,19 +1,21 @@
 <template>
-    <nav class="mobile-navigation">
+  <nav class="mobile-navigation">
     <div class="mobile-logo">
       <Logo />
     </div>
     <div class="nav-icon-container">
       <div class="nav-icon" @click="toggleNav">
-      <span :class="navIsOpen ? 'menu-icon top-active' : 'menu-icon'"></span>
-      <span :class="navIsOpen ? 'menu-icon middle-active' : 'menu-icon'"></span>
-      <span :class="navIsOpen ? 'menu-icon bottom-active' : 'menu-icon'"></span>
-    </div>
-
+        <span :class="navIsOpen ? 'menu-icon top-active' : 'menu-icon'"></span>
+        <span :class="navIsOpen ? 'menu-icon middle-active' : 'menu-icon'"></span>
+        <span :class="navIsOpen ? 'menu-icon bottom-active' : 'menu-icon'"></span>
+      </div>
     </div>
     <transition name="fade">
-      <div :class="navIsOpen ? 'mobile-menu mobile-menu-active' : 'mobile-menu'" v-if="navIsOpen">
-        <nav-links />
+      <div
+        :class="navIsOpen ? 'mobile-menu mobile-menu-active' : 'mobile-menu'"
+        v-if="navIsOpen"
+      >
+        <nav-links @click="closeNav" />
       </div>
     </transition>
   </nav>
@@ -21,25 +23,25 @@
 
 <script>
 import Logo from "@/components/Logo.vue";
-import NavLinks from '../../add-ins/NavLinks.vue';
+import NavLinks from "../../add-ins/NavLinks.vue";
 export default {
   components: {
     Logo,
-    NavLinks
+    NavLinks,
   },
   data() {
     return {
-      navIsOpen: false
-    }
+      navIsOpen: false,
+    };
   },
   methods: {
     toggleNav() {
-      this.navIsOpen = !this.navIsOpen
+      this.navIsOpen = !this.navIsOpen;
     },
     closeNav() {
-      this.navIsOpen = false
-    }
-  }
+      this.navIsOpen = false;
+    },
+  },
 };
 </script>
 
@@ -57,6 +59,8 @@ export default {
   justify-content: space-between;
   max-height: 2rem;
   padding: 2rem;
+  height: auto;
+  background: green;
 }
 .mobile-menu {
   padding-top: 4rem;
@@ -94,11 +98,10 @@ export default {
   position: relative;
   width: 3rem;
   height: 3rem;
-  
 }
 .nav-icon {
   position: absolute;
-  right:0;
+  right: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -106,30 +109,28 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   z-index: 101;
-  
 }
 .menu-icon {
   width: 100%;
   background: var(--text-dark);
-  height: 0.2rem;
+  height: 0.3rem;
   border-radius: 0.2rem;
   transform: rotate(0deg);
   transform-origin: 0%;
-  transition: all 0.5s ease-in;
-  
+  transition: transform 0.5s ease-in;
 }
 /* menu-icon states */
 .top-active {
   transform: rotate(45deg);
 }
 .bottom-active {
-  transform: rotate(315deg);
+  transform: rotate(-45deg);
 }
 .middle-active {
   transform: translateX(1000px);
 }
 .mobile-logo {
-  max-width: 3rem;
+  /* max-width: 3rem; */
 }
 .mobile-logo > svg {
   height: 1rem;

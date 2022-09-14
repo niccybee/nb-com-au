@@ -1,12 +1,6 @@
 <template>
   <nuxt-link to="/">
-    <svg
-      width="139"
-      height="77"
-      viewBox="0 0 139 77"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 139 77" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M111.583 14.74L106.346 6.65085C105.834 5.86008 104.654 5.86364 104.138 6.65788L66.9519 63.8194C66.6777 64.2409 66.6762 64.7785 66.9479 65.1982L72.1852 73.2874C72.6972 74.0782 73.8766 74.0746 74.3933 73.2804L111.579 16.1189C111.853 15.6974 111.855 15.1598 111.583 14.74Z"
         fill="#C4C4C4"
@@ -325,7 +319,10 @@
     </svg>
   </nuxt-link>
 </template>
-<style>
+<style scoped>
+svg {
+  width: 5rem;
+}
 .logo {
   animation: 1s appear;
   transition: transform 0.2s ease-out;
@@ -342,6 +339,11 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@media only screen and (max-width: 730px) {
+  svg {
+    height: 3.4rem;
   }
 }
 </style>

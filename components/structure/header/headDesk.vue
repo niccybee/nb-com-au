@@ -1,16 +1,16 @@
 <template>
   <div class="top-navigation">
-    <nav-links/>
+    <nav-links />
     <div class="menu-navigation"></div>
   </div>
 </template>
 
 <script>
-import NavLinks from "@/components/add-ins/NavLinks"
+import NavLinks from "@/components/add-ins/NavLinks";
 export default {
   components: {
-    NavLinks
-  }
+    NavLinks,
+  },
 };
 </script>
 
@@ -22,7 +22,6 @@ export default {
 .top-navigation {
   min-width: 100%;
 }
-
 
 /* actual css */
 /* - layout */
@@ -37,11 +36,12 @@ export default {
     justify-content: space-around;
     padding-left: 16%;
     padding-right: 16%;
+    padding-top: 1rem;
     padding-bottom: 3rem;
     transition: background 0.2s ease-in;
   }
   .top-navigation-sub:hover {
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   }
   .top-navigation-sub a {
     color: var(--text-dark);
@@ -61,7 +61,6 @@ export default {
   }
   .menu-item:hover {
     text-decoration: underline;
-    
   }
 }
 /* - - mobile */

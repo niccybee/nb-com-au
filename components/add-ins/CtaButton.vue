@@ -1,32 +1,34 @@
 <template>
   <div class="button-container">
-      <div class="button-highlight" v-if="button_name === 'right_corner_main'"></div>
-      <a class="primary-button" :target="target" :href="button_link">{{button_text}}</a>
+    <div class="button-highlight" v-if="button_name === 'right_corner_main'"></div>
+    <a class="primary-button" :target="target" :href="button_link">{{ button_text }}</a>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['button_name', 'button_link', 'button_text', 'target' ]
-}
+  props: ["button_name", "button_link", "button_text", "target"],
+};
 </script>
 
 <style>
 .button-container {
-    margin-top: 1rem;
+  margin: 0;
+  padding: 0;
 }
 .primary-button {
   border: solid 1px var(--text-dark-2);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
   border-radius: 4px;
   font-size: 1rem;
   background: none;
   cursor: pointer;
   color: var(--text-dark-2);
   text-decoration: none;
+  position: relative;
 }
 .primary-button:hover {
   color: white;
@@ -35,19 +37,18 @@ export default {
   border: solid white 1px;
 }
 .button-highlight {
-    background-color: var(--highlight-900);
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    transition: all 0.3s ease-in-out;
-    z-index: -100;
+  background-color: var(--highlight-900);
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: -100;
 }
 .button-container:hover .button-highlight {
-    transform: scale(100);
-    transition: all 0.3s ease-in-out
+  transform: scale(100);
+  transition: all 0.3s ease-in-out;
 }
-
 </style>

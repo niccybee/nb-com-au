@@ -122,7 +122,7 @@ li {
 /* - layout */
 /* - - all  */
 .wrap-all {
-  min-height: 98vh;
+  min-height: 99vh;
 }
 /* - - desktop */
 @media only screen and (min-width: 730px) {
@@ -176,29 +176,19 @@ li {
     display: grid;
     width: 98vw;
     background-color: var(--background-color);
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     grid-template-areas:
-      "header"
-      "main"
-      "right-aside"
-      "footer"
-      "left-aside";
+      "header header"
+      "main main"
+      "left-aside right-aside"
+      "footer footer";
   }
-  .desktop-header,
-  .left-aside {
+  /* .desktop-header {
+
+  } */
+  /* .left-aside {
     display: none;
-  }
-  .hero h1 {
-    font-size: 36px;
-  }
-  .hero {
-    padding: 2rem;
-  }
-  .right-aside {
-    width: 100%;
-    background: lightgoldenrodyellow;
-    position: static;
-  }
+  } */
 }
 </style>

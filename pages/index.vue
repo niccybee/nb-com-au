@@ -30,7 +30,7 @@ export default {
         copy:
           "Personal site of Nicholas Benson. <br/> I like playing around with front-end development– especially Vue.js.",
         cta_link: "/blog",
-        cta_text: "View All Blogs",
+        // cta_text: "View All Blogs",
       },
       textSect: {
         header: "This is the new header",
