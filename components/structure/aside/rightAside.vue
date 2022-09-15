@@ -6,8 +6,8 @@
       :button_text="buttonText"
       :target="buttonTarget"
     />
-    <div class="right-aside-content">
-      <div v-if="$nuxt.$route.name == 'cv'">
+    <div class="right-aside-content" v-if="$nuxt.$route.name == 'cv'">
+      <div>
         <h4>Past Work</h4>
       </div>
     </div>
@@ -65,7 +65,7 @@ export default {
     align-items: center;
     justify-content: center;
     background-color: var(--hightlight-900);
-    border: 1px solid var(--highlight-900);
+    border-left: 1px solid var(--highlight-900);
     width: 100%;
     height: 100%;
     position: relative;

@@ -37,7 +37,6 @@ aside {
     display: block;
     flex-direction: row;
     width: 100%;
-    background-color: lightblue;
   }
   .logo-aside {
     display: none;

@@ -1,7 +1,7 @@
 <template>
   <section class="hero" :style="bg_image ? `background-image: url(${bg_image})` : ''">
     <h1>{{ title }}</h1>
-    <p><span v-html="copy"></span></p>
+    <div><p v-html="copy"></p></div>
     <div v-if="cta_text">
       <CtaButton
         :button_name="cta.name"

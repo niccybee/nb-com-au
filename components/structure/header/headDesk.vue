@@ -38,7 +38,7 @@ export default {
     padding-right: 16%;
     padding-top: 1rem;
     padding-bottom: 3rem;
-    transition: background 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
   }
   .top-navigation-sub:hover {
     background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
