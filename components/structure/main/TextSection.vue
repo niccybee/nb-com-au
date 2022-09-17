@@ -1,13 +1,13 @@
 <template>
   <section class="text-section">
-    <h2>{{header}}</h2>
-    <p>{{text}}</p>
+    <h2>{{ header }}</h2>
+    <p v-html="text"></p>
   </section>
 </template>
 
 <script>
 export default {
-  props: ['header', 'text']
+  props: ["header", "text"],
 };
 </script>
 

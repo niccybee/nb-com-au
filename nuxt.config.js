@@ -64,7 +64,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    { src: "@/plugins/animateOnScoll.client.js", mode: "client" }
+    // { src: "@/plugins/darkModeToggle.client.js", mode: "client" }
+  ],
 
   /*
    ** Nuxt.js dev-modules

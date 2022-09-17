@@ -69,4 +69,9 @@ export default {
     display: none;
   }
 }
+@media (prefers-color-scheme: dark) {
+  .top-navigation-sub:hover {
+    background: none;
+  }
+}
 </style>

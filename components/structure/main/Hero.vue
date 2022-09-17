@@ -1,7 +1,7 @@
 <template>
   <section class="hero" :style="bg_image ? `background-image: url(${bg_image})` : ''">
     <h1>{{ title }}</h1>
-    <div><p v-html="copy"></p></div>
+    <div class="hero-copy" v-if="copy"><span v-html="copy"></span></div>
     <div v-if="cta_text">
       <CtaButton
         :button_name="cta.name"
@@ -36,10 +36,13 @@ export default {
 .hero h1 {
   margin-bottom: 0.5rem;
 }
+.hero-copy {
+  padding: 0 0 2rem 0;
+}
 
 @media only screen and (min-width: 729px) {
   .hero {
-    min-height: 80vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     padding: 2rem;

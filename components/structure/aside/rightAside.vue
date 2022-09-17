@@ -1,11 +1,17 @@
 <template>
   <aside class="right-aside">
+    <div style="height: 1rem"></div>
     <cta-button
       :button_name="buttonType"
       :button_link="buttonLink"
       :button_text="buttonText"
       :target="buttonTarget"
     />
+    <!-- TODO: FIX THIS HACKY BS -->
+    <div style="height: 1rem"></div>
+    <div class="toggle-holder">
+      <ThemeToggle />
+    </div>
     <div class="right-aside-content" v-if="$nuxt.$route.name == 'cv'">
       <div>
         <h4>Past Work</h4>
@@ -16,10 +22,12 @@
 
 <script>
 import CtaButton from "@/components/add-ins/CtaButton";
+import ThemeToggle from "@/components/add-ins/ThemeToggle";
 
 export default {
   components: {
     CtaButton,
+    ThemeToggle,
   },
   data() {
     return {
@@ -33,10 +41,6 @@ export default {
 </script>
 
 <style>
-.right-aside > .button-container {
-  margin-top: 1rem;
-  margin-right: 0.5rem;
-}
 .right-aside {
   /* display: flex;
   align-items: center;
@@ -56,7 +60,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100%;
+  height: 100%;
+  background: blue;
   /* margin-top: 8rem; */
 }
 @media only screen and (max-width: 730px) {

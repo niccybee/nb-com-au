@@ -29,105 +29,16 @@ export default {
 </script>
 
 <style>
-/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap"); */
-/* CSS Variables */
-/* :root {
-  --background-color: #f8fcfe;
-  --highlight-100: #e0ecf3;
-  --highlight-900: #54798e;
-  --text-dark: #282727;
-  --text-dark-2: #403f3f;
-  --text-light: #ffffff;
-} */
-
-/* border-box reset */
-
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* smooth scroll */
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* debugging */
-/* header,
-aside,
-main,
-footer {
-  border: dashed 1px purple;
-} */
-
-/* MY STYLES START HERE */
-.desktop-header {
-  z-index: 1;
-  /* background: lightblue; */
-}
-/* - grid areas labelling */
-header {
-  grid-area: header;
-  /* background-color: blue; */
-}
-footer {
-  grid-area: footer;
-  /* background-color: red; */
-}
-main {
-  grid-area: main;
-  /* background-color: green; */
-}
-.left-aside {
-  grid-area: left-aside;
-  /* background-color: yellow;  */
-}
-.right-aside {
-  grid-area: right-aside;
-  /* background-color: yellow; */
-}
-
-/* styling -> */
-/* - fonts */
-
-h1 {
-  /* font-family:  */
-  font-weight: 700;
-}
-h2,
-h3,
-h4,
-h5,
-p,
-a,
-nav,
-ul,
-ol,
-li {
-  font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5rem;
-  color: var(--text-dark);
-}
-p,
-li {
-  color: var(--text-dark-2);
-}
 /* - layout */
 /* - - all  */
 .wrap-all {
-  min-height: 99vh;
+  min-height: 100vh;
 }
 /* - - desktop */
 @media only screen and (min-width: 730px) {
   .wrap-all {
     display: grid;
-    width: 98vw;
+
     background-color: var(--background-color);
     grid-template-columns: 15% 35% 35% 15%;
     grid-template-rows: auto;
@@ -173,7 +84,6 @@ li {
 @media only screen and (max-width: 730px) {
   .wrap-all {
     display: grid;
-    width: 98vw;
     background-color: var(--background-color);
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;

@@ -20,9 +20,6 @@ export default {
 </script>
 
 <style>
-aside {
-  padding: 1rem;
-}
 .left-aside {
   width: 15%;
   position: fixed;

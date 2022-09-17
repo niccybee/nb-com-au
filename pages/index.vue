@@ -32,6 +32,7 @@ export default {
         cta_link: "/blog",
         // cta_text: "View All Blogs",
       },
+
       textSect: {
         header: "This is the new header",
         text: "This is the new text section",

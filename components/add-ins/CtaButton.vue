@@ -12,10 +12,15 @@ export default {
 </script>
 
 <style>
+/* testing issue */
 .button-container {
   margin: 0;
   padding: 0;
+  height: auto !important;
 }
+
+/* test issuse end */
+
 .primary-button {
   border: solid 1px var(--text-dark-2);
   padding-top: 0.8rem;
@@ -28,7 +33,7 @@ export default {
   cursor: pointer;
   color: var(--text-dark-2);
   text-decoration: none;
-  position: relative;
+  /* position: relative; */
 }
 .primary-button:hover {
   color: white;
@@ -48,7 +53,7 @@ export default {
   z-index: -100;
 }
 .button-container:hover .button-highlight {
-  transform: scale(100);
+  transform: scale(60);
   transition: all 0.3s ease-in-out;
 }
 </style>

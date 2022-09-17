@@ -28,29 +28,24 @@ export default {
 };
 </script>
 
-<style>
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
-/* CSS Variables */
-
-
-/* styling -> */
-/* - fonts */
-
+<style scoped>
 /* - layout */
 /* - - all  */
-
+.wrap-all {
+  min-height: 100vh;
+}
 /* - - desktop */
 @media only screen and (min-width: 730px) {
   .wrap-all {
     display: grid;
-    width: 98vw;
+
     background-color: var(--background-color);
     grid-template-columns: 15% 35% 35% 15%;
     grid-template-rows: auto;
     grid-template-areas:
-      "left-aside header header right-aside"
-      "left-aside main main right-aside"
-      "left-aside footer footer right-aside";
+      "left-aside header header"
+      "left-aside main main"
+      "right-aside footer footer";
   }
   .header {
     min-height: 3rem;
@@ -89,7 +84,6 @@ export default {
 @media only screen and (max-width: 730px) {
   .wrap-all {
     display: grid;
-    width: 98vw;
     background-color: var(--background-color);
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
