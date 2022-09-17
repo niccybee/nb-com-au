@@ -1,6 +1,6 @@
 <template>
-  <div id="dark-toggle" class="theme-switcher">
-    <button @click="switchTheme">
+  <div>
+    <button class="theme-switcher" @click="switchTheme">
       <span v-if="theme === 'dark'">🌞</span><span v-else>🌙</span>
     </button>
     <!-- <p class="info">{{ this.theme }}</p> -->
@@ -16,6 +16,11 @@ export default {
       this.theme = theme;
       console.log(theme);
       document.body.classList.add(theme);
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (event) => {
+          this.switchTheme();
+        });
     }
   },
   methods: {
@@ -50,8 +55,10 @@ export default {
   right: 32rem;
 }
 .theme-switcher {
-  padding: 0.2rem;
+  padding: 0.5rem;
   font-size: 2rem;
   cursor: pointer;
+  background: none;
+  border: none;
 }
 </style>

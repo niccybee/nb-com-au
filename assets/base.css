@@ -10,6 +10,22 @@
     "Times New Roman", Times, serif;
   --paragraph-margin-top: 1rem;
   --paragraph-margin-bottom: 0.5rem;
+  --background-color: #f8fcfe;
+  --hightlight: #fff;
+  --highlight-100: #e0ecf3;
+  --highlight-900: #54798e;
+  --text-dark: #282727;
+  --text-dark-2: #403f3f;
+  --text-light: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  --background-color: #403f3f;
+  --highlight-100: #e0ecf3;
+  --highlight-900: #54798e;
+  --text-dark: #fefefe;
+  --text-dark-2: #f8fcfe;
+  --text-light: #ffffff;
 }
 .light {
   /* Colors */
