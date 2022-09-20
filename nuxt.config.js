@@ -60,7 +60,12 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["@/assets/base.css", "@/assets/index.css", "@/assets/type.css"],
+  css: [
+    "@/assets/reset.css",
+    "@/assets/base.css",
+    "@/assets/index.css",
+    "@/assets/type.css"
+  ],
   /*
    ** Plugins to load before mounting the App
    */
