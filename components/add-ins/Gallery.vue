@@ -46,6 +46,9 @@ export default {
 .gallery-item:hover {
   background-color: var(--highlight-900);
 }
+.gallery-item:hover h2 {
+  color: var(--highlight-100);
+}
 @media only screen and (max-width: 730px) {
   .gallery {
     grid-template-columns: 1fr;

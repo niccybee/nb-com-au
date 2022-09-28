@@ -1,6 +1,6 @@
 <template>
   <footer class="foot">
-    <p>© {{thisYear}} Nicholas Benson</p>
+    <p>© {{ thisYear }} Nicholas Benson</p>
   </footer>
 </template>
 
@@ -10,8 +10,8 @@ export default {
     thisYear() {
       let d = new Date();
       return d.getFullYear();
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -19,5 +19,7 @@ export default {
 .foot {
   padding-left: 4rem;
   padding-right: 4rem;
+  z-index: 1;
+  text-align: center;
 }
 </style>

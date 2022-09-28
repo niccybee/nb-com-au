@@ -33,6 +33,9 @@ export default {
 </script>
 
 <style>
+.hero {
+  z-index: 1;
+}
 .hero h1 {
   margin-bottom: 0.5rem;
 }

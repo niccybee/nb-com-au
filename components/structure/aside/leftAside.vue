@@ -28,6 +28,9 @@ export default {
   align-items: center;
   justify-content: flex-start;
 }
+.logo-aside {
+  margin-top: 1rem;
+}
 @media only screen and (max-width: 730px) {
   .left-aside {
     position: relative;

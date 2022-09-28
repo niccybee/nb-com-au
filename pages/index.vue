@@ -27,8 +27,7 @@ export default {
     return {
       HeroContents: {
         title: "Welcome",
-        copy:
-          "<p>Personal site of Nicholas Benson.</p> <p> Web design and front-end development– most recently Vue.js.",
+        copy: `<p  style="text-align:center;">Personal site of Nicholas Benson.</p> <p> Web design and front-end development– most recently Vue.js.`,
         cta_link: "/blog",
         // cta_text: "View All Blogs",
       },
@@ -42,4 +41,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.home {
+  z-index: 1;
+}
+</style>

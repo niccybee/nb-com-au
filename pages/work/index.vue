@@ -1,6 +1,6 @@
 <template>
   <main>
-    <hero title="Work" copy="Some recent work">
+    <hero title="Work" copy="<p>Some recent work</p>">
       <gallery :items="items"></gallery>
     </hero>
   </main>

@@ -1,13 +1,14 @@
 <template>
-  <div class="wrap-all">
+  <div class="wrap-all" @mousemove="moveFunc">
+    <Background :mouseX="mouseX" :mouseY="mouseY" />
     <header>
       <HeadDesk class="desktop-header" />
       <HeadMob class="mobile-header" />
     </header>
-    <left-aside />
-    <nuxt />
-    <right-aside />
-    <foot />
+    <leftAside />
+    <Nuxt />
+    <rightAside />
+    <Foot />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import HeadMob from "@/components/structure/header/headMob.vue";
 import leftAside from "@/components/structure/aside/leftAside.vue";
 import rightAside from "@/components/structure/aside/rightAside.vue";
 import Foot from "@/components/structure/footer/foot.vue";
+import Background from "@/components/add-ins/Background.vue";
 export default {
   components: {
     HeadDesk,
@@ -24,6 +26,30 @@ export default {
     leftAside,
     rightAside,
     Foot,
+    Background,
+  },
+  data() {
+    return {
+      mouseX: 0,
+      mouseY: 0,
+      mounted: false,
+      noMotion: false,
+    };
+  },
+  mounted() {
+    this.mounted = true;
+    if (process.client) {
+      console.log(window.matchMedia("prefers-reduced-motion"));
+    }
+  },
+  methods: {
+    moveFunc(e) {
+      if (process.client && this.mounted) {
+        // console.log(e.clientX, e.clientY);
+        this.mouseX = e.clientX;
+        this.mouseY = e.clientY;
+      }
+    },
   },
 };
 </script>
