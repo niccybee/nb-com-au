@@ -49,11 +49,11 @@ export default {
 }
 .social-button:hover .icon {
   fill: var(--highlight-900);
+  transition: all 0.2s ease-in;
 }
 .social-button:hover {
   background-color: var(--highlight-100);
   color: var(--highlight-900);
-  transition: all 0.2s ease-in;
 }
 .icon-container {
   display: flex;
@@ -64,9 +64,12 @@ export default {
     margin: 0;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
     width: 100%;
   }
   .social-button {
+    margin-top: 0;
     margin-right: 1rem;
   }
 }

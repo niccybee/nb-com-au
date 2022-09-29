@@ -38,8 +38,9 @@ export default {
 .primary-button:hover {
   color: white;
   background-color: var(--highlight-900);
-  transition: all 0.3s ease-in-out;
-  border: solid white 1px;
+  color: var(--highlight-100);
+  border: solid var(--highlight-100) 1px;
+  transition: all 0.2s ease-in-out;
 }
 .button-highlight {
   background-color: var(--highlight-900);

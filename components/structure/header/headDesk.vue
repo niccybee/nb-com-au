@@ -1,6 +1,6 @@
 <template>
   <div class="top-navigation">
-    <nav-links />
+    <nav-links class="top-navigation-sub" />
     <div class="menu-navigation"></div>
   </div>
 </template>
@@ -37,13 +37,12 @@ export default {
     padding-left: 16%;
     padding-right: 16%;
     padding-top: 1rem;
-    padding-bottom: 3rem;
-    background: none;
-    /* transition: background-color 0.2s ease-in; */
+    padding-bottom: 2rem;
+    transition: background-color 0.2s ease-in;
   }
-  /* .top-navigation-sub:hover {
+  .top-navigation-sub:hover {
     background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-  } */
+  }
   .top-navigation-sub a {
     color: var(--text-dark);
     opacity: 0.5;
@@ -54,17 +53,7 @@ export default {
     opacity: 1;
     transition: all 0.2s ease-in;
   }
-  .menu-item {
-    padding: 1rem;
-    text-decoration: none;
-    cursor: pointer;
-    transition: text-decoration 0.5s ease-in;
-  }
-  .menu-item:hover {
-    text-decoration: underline;
-  }
 }
-
 /* - - mobile */
 @media only screen and (max-width: 730px) {
   .top-navigation {

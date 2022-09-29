@@ -1,3 +1,4 @@
+// This version is slow on safari //
 <template>
   <div id="anim-bg" class="bg-container">
     <!-- <div class="debug-shit">
@@ -8,7 +9,6 @@
     </div> -->
     <!-- <div class="debug-box" :style="`transform(${mouseX}, ${mouseY})`"></div> -->
     <!-- <div class="debug-box" :style="`top:${mouseY};left:${mouseX};`"></div> -->
-    <!-- <client-only> -->
     <svg
       width="2632"
       height="1709"
@@ -95,7 +95,6 @@
         </filter>
       </defs>
     </svg>
-    <!-- </client-only> -->
   </div>
 </template>
 <script>
@@ -141,7 +140,7 @@ export default {
   width: 100vw;
   height: 100vh;
   top: 0;
-
+  left: 10px;
   right: 0;
   overflow: hidden;
   /* opacity: 0.5; */

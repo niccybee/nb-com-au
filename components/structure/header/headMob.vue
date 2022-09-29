@@ -100,8 +100,8 @@ export default {
 
 .nav-icon-container {
   position: relative;
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 2.2rem;
+  height: 2.4rem;
 }
 .nav-icon {
   position: absolute;
@@ -116,9 +116,9 @@ export default {
 }
 .menu-icon {
   width: 100%;
-  background: var(--text-dark);
+  background: var(--highlight-900);
   height: 0.25rem;
-  border-radius: 0.2rem;
+  border-radius: 1px;
   transform: rotate(0deg);
   transform-origin: 0%;
   transition: transform 0.5s ease-in;
@@ -132,6 +132,8 @@ export default {
 }
 .middle-active {
   transform: translateX(1000px);
+  /* TODO: Decide which transition I prefer */
+  /* opacity: 0; */
 }
 .mobile-logo > svg {
   height: 1rem;

@@ -59,6 +59,7 @@ export default {
 /* - - all  */
 .wrap-all {
   min-height: 100vh;
+  background-color: var(--highlight-100);
 }
 /* - - desktop */
 @media only screen and (min-width: 730px) {
@@ -122,8 +123,9 @@ export default {
   /* .desktop-header {
 
   } */
-  /* .left-aside {
-    display: none;
-  } */
+  .left-aside,
+  .right-aside {
+    max-width: 49vw;
+  }
 }
 </style>

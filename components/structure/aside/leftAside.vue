@@ -34,12 +34,14 @@ export default {
 @media only screen and (max-width: 730px) {
   .left-aside {
     position: relative;
-    display: block;
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
   .logo-aside {
     display: none;
+    visibility: hidden;
   }
 }
 </style>

@@ -66,8 +66,7 @@ export default {
 }
 @media only screen and (max-width: 730px) {
   .right-aside {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
     background-color: var(--hightlight-900);
     border-left: 1px solid var(--highlight-900);

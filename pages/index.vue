@@ -27,7 +27,7 @@ export default {
     return {
       HeroContents: {
         title: "Welcome",
-        copy: `<p  style="text-align:center;">Personal site of Nicholas Benson.</p> <p> Web design and front-end development– most recently Vue.js.`,
+        copy: `<p  style="text-align:center;">Personal site of Nicholas Benson.</p> <p style="text-align:center;"> Web design and front-end development, mainly Vue.js.`,
         cta_link: "/blog",
         // cta_text: "View All Blogs",
       },
