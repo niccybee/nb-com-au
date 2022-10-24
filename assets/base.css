@@ -21,13 +21,18 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  --background-color: #403f3f;
-  --highlight-100: #e0ecf3;
-  --hightlight-500: #9cb1bd;
-  --highlight-900: #54798e;
-  --text-dark: #fefefe;
-  --text-dark-2: #f8fcfe;
-  --text-light: #ffffff;
+  :root {
+    --background-color: #403f3f;
+    --highlight-100: #e0ecf3;
+    --hightlight-500: #9cb1bd;
+    --highlight-900: #54798e;
+    --text-dark: #fefefe;
+    --text-dark-2: #f8fcfe;
+    --text-light: #ffffff;
+  }
+  body {
+    background-color: var(--background-color);
+  }
 }
 .light {
   /* Colors */

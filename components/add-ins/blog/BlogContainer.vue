@@ -1,6 +1,6 @@
 <template>
   <div id="all" class="blog-container">
-    <h2>Current Blogs</h2>
+    <h2 class="">Current Blogs</h2>
     <div class="blog-list">
       <nuxt-link
         class="blog-list-item-link"
@@ -31,7 +31,6 @@ export default {
 
 <style>
 .blog-container {
-  background: white;
   padding: 2rem;
 }
 .blog-list {

@@ -60,7 +60,7 @@ export default {
 @media only screen and (max-width: 730px) {
   .hero {
     padding: 2rem;
-    min-height: 60vh;
+    min-height: 98vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

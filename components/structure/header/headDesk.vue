@@ -21,6 +21,7 @@ export default {
 } */
 .top-navigation {
   min-width: 100%;
+  z-index: 2;
 }
 
 /* actual css */

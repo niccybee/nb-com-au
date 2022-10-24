@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="work">
     <Hero>
       <div class="folio-section">
         <iframe

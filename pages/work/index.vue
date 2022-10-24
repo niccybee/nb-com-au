@@ -1,6 +1,9 @@
 <template>
-  <main>
-    <hero title="Work" copy="<p>Some recent work</p>">
+  <main class="work">
+    <hero
+      title="Work"
+      copy="<p>Some of my recent work in web design, dev and digital marketing.</p>"
+    >
       <gallery :items="items"></gallery>
     </hero>
   </main>
@@ -22,23 +25,34 @@ export default {
           title: "Sunday Quiz ☀️",
           // image_url: "https://placehold.it/",
           url: "https://sundayquiz.com.au",
+          tags: ["design", "dev"],
         },
         {
           id: 1,
           title: "Mr Yum Clone in Vue (WIP)",
           url: "https://paray-inn.surge.sh/",
+          tags: ["design", "dev"],
         },
         {
           id: 2,
           title: "Mobile Course Activity (WIP)",
           url: "http://activity-test.surge.sh/",
+          tags: ["dev"],
         },
 
         {
           id: 3,
           title: "Recent Design Folio",
           url: "/work/folio",
+          tags: ["design"],
         },
+        {
+          id: 4,
+          title: "New sign-up flow",
+          url: "/work/sign-up-flow",
+          tags: ["design"],
+        },
+
         // {
         //   id: 4,
         //   title: "This is all my work",
@@ -55,4 +69,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.work {
+  z-index: 1;
+}
+</style>

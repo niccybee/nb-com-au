@@ -28,6 +28,7 @@
           fill="var(--highlight-500)"
         />
       </g>
+
       <g
         :transform="`translate(${positionX}, ${positionY})`"
         filter="url(#filter2_f_100_0)"
@@ -38,6 +39,7 @@
           fill="var(--highlight-100)"
         />
       </g>
+
       <defs>
         <filter
           id="filter0_f_100_0"
@@ -140,8 +142,8 @@ export default {
   z-index: 0;
   width: 100vw;
   height: 100vh;
-  top: 0;
-
+  /* top: 0; */
+  bottom: 0;
   right: 0;
   overflow: hidden;
   /* opacity: 0.5; */

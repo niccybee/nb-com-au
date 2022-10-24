@@ -1,6 +1,5 @@
 <template>
   <div class="wrap-all" @mousemove="moveFunc">
-    <Background :mouseX="mouseX" :mouseY="mouseY" />
     <header>
       <HeadDesk class="desktop-header" />
       <HeadMob class="mobile-header" />
@@ -18,7 +17,6 @@ import HeadMob from "@/components/structure/header/headMob.vue";
 import leftAside from "@/components/structure/aside/leftAside.vue";
 import rightAside from "@/components/structure/aside/rightAside.vue";
 import Foot from "@/components/structure/footer/foot.vue";
-import Background from "@/components/add-ins/Background.vue";
 export default {
   components: {
     HeadDesk,
@@ -26,7 +24,6 @@ export default {
     leftAside,
     rightAside,
     Foot,
-    Background,
   },
   data() {
     return {
@@ -62,15 +59,6 @@ export default {
 </script>
 
 <style>
-/* transitions */
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
-}
-.page-enter,
-.page-leave-active {
-  opacity: 0;
-}
 /* - layout */
 /* - - all  */
 .wrap-all {
