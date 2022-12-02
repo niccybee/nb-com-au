@@ -1,12 +1,12 @@
 <template>
   <div>
-    <!-- items: {{ items }} -->
-    <!-- <hr />
+    items: {{ items }}
+    <hr />
     filters: {{ allFilters }}
     <hr />
     activeFilters: {{ activeFilters }}
     <hr />
-    filtered: {{ filteredItems }} -->
+    filtered: {{ filteredItems }}
     <div class="gallery-filters">
       <div
         class="gallery-filter"
@@ -16,7 +16,7 @@
       >
         {{ f.name }}
       </div>
-      <p class="gallery-filter-clear" @click="clearActive">Clear</p>
+      <sub class="gallery-filter-clear" @click="clearActive">Clear</sub>
     </div>
     <transition-group name="gallery" tag="div" class="gallery">
       <div
@@ -37,6 +37,7 @@ export default {
   data() {
     return {
       allFilters: [],
+      mountedItems: [],
     };
   },
   computed: {
@@ -53,7 +54,7 @@ export default {
       // push active items into new array
       let activeThings = [];
 
-      this.items.forEach((x) => {
+      this.mountedItems.forEach((x) => {
         //         console.log(x)
         x.tags.forEach((t) => {
           //           console.log(t);
@@ -70,7 +71,9 @@ export default {
       return Array.from(new Set(activeThings));
     },
   },
+
   mounted() {
+    this.mountedItems = this.items;
     this.allFilters = this.someFilters.map((x) => {
       return { name: x, isActive: true };
     });
@@ -130,12 +133,19 @@ export default {
 }
 .gallery-filter-clear {
   justify-self: flex-end;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+.gallery-filter-clear {
+  background: var(--highlight-500);
+  cursor: pointer;
 }
 .active {
   outline: var(--highlight-00) 4px;
   background-color: var(--highlight-900);
   color: var(--text-light);
 }
+
 .gallery-item {
   opacity: 1;
   background-color: var(--highlight-100);

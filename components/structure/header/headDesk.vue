@@ -42,10 +42,14 @@ export default {
     transition: background-color 0.2s ease-in;
   }
   .top-navigation-sub:hover {
-    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(156, 177, 189, 0.21) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
   .top-navigation-sub a {
-    color: var(--text-dark);
+    color: var(--highlight-900);
     opacity: 0.5;
     transition: all 0.2s ease-out;
     font-weight: 500;

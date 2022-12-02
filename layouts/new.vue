@@ -4,9 +4,9 @@
       <HeadDesk class="desktop-header" />
       <HeadMob class="mobile-header" />
     </header>
-    <left-aside />
+    <!-- <left-aside /> -->
     <nuxt />
-    <right-aside />
+    <!-- <right-aside /> -->
     <foot />
   </div>
 </template>

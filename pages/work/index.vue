@@ -53,11 +53,11 @@ export default {
           tags: ["design"],
         },
 
-        // {
-        //   id: 4,
-        //   title: "This is all my work",
-        //   image_url: "https://placehold.it/",
-        // },
+        {
+          id: 5,
+          title: "Education Dashboard (WIP)",
+          image_url: "https://e2-concept-dashboard.surge.sh",
+        },
         // {
         //   id: 5,
         //   title: "This is all my work",

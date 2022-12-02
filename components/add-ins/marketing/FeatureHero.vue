@@ -7,7 +7,7 @@
       <h3>Compact yet full of intuitive features</h3>
       <p>{{ text }}</p>
     </div>
-    <div class="feature-hero-image"><img src="http://picsum.photos/1200" alt="" /></div>
+    <div class="feature-hero-image"><img src="https://picsum.photos/1200" alt="" /></div>
   </section>
 </template>
 <script>
