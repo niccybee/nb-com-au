@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       title: "Tools",
-      body: `<p>A collection of tools I've built to help with marketing day to day marketiung tasks.</p>`,
+      body: `<p>A collection of tools I've built to help with marketing day to day marketing tasks.</p>`,
       cta_link: "#",
       items: [
         {

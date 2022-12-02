@@ -1,15 +1,13 @@
 <template>
   <div>
-    <!-- items: {{ items }}
-    <hr />
-    mountedItems: {{ mountedItems }}
+    items: {{ items }}
     <hr />
     filters: {{ allFilters }}
     <hr />
     activeFilters: {{ activeFilters }}
     <hr />
-    filtered: {{ filteredItems }} -->
-    <!-- <div class="gallery-filters">
+    filtered: {{ filteredItems }}
+    <div class="gallery-filters">
       <div
         class="gallery-filter"
         :class="f.isActive ? 'active' : 'inactive'"
@@ -19,11 +17,11 @@
         {{ f.name }}
       </div>
       <sub class="gallery-filter-clear" @click="clearActive">Clear</sub>
-    </div> -->
+    </div>
     <transition-group name="gallery" tag="div" class="gallery">
       <div
         class="gallery-item"
-        v-for="i in mountedItems"
+        v-for="i in filteredItems"
         :style="`background-image:url(${i.image_url})`"
         :key="i.id"
       >
@@ -39,69 +37,52 @@ export default {
   data() {
     return {
       allFilters: [],
-
       mountedItems: [],
-      loadingItem: {
-        id: 0,
-        title: "Loading...",
-        // image_url: "https://placehold.it/",
-        url: "loading..",
-        tags: ["loading"],
-      },
     };
   },
+  computed: {
+    someFilters() {
+      let filters = [];
+      this.items.forEach((f) =>
+        f.tags.forEach((x) => {
+          if (x.tags) filters.push(x);
+        })
+      );
+      return Array.from(new Set(filters));
+    },
+    activeFilters() {
+      let activeTags = this.allFilters.filter((x) => x.isActive);
+      return activeTags;
+    },
+    filteredItems() {
+      // push active items into new array
+      let activeThings = [];
+
+      if (this.activeTags.length) {
+        activeThings = this.mountedItems.filter((x) => {
+          return x.tags.every((f) => x.tags.includes(f));
+        });
+      }
+
+      return activeThings;
+      // return Array.from(new Set(activeThings));
+    },
+  },
+
   mounted() {
-    console.log("bf");
     this.mountedItems = this.items;
-    // this.createFilters();
+    this.allFilters = this.someFilters.map((x) => {
+      return { name: x, isActive: true };
+    });
   },
   methods: {
-    // toggleActive(x) {
-    //   x.isActive = !x.isActive;
-    //   console.log(x.isActive);
-    // },
-    // createFilters() {
-    //   let initArray = [];
-    //   let initSet = [];
-    //   let filters = [];
-    //   this.items.forEach((x) => {
-    //     if (x.tags && x.tags.length > 0) {
-    //       let arr = x.tags;
-    //       arr.forEach((y) => {
-    //         initArray.push(y);
-    //       });
-    //     }
-    //   });
-    //   initSet = Array.from(new Set(initArray));
-    //   filters = initSet.map((x) => {
-    //     return { name: x, isActive: false };
-    //   });
-    //   this.allFilters = filters;
-    // },
-    // clearActive() {
-    //   this.activeFilters.forEach((x) => (x.isActive = false));
-    // },
-  },
-  computed: {
-    // activeFilters() {
-    //   let activeTags = this.allFilters.filter((x) => x.isActive);
-    //   return activeTags;
-    // },
-    // filteredItems() {
-    //   let actives = [];
-    //   if (this.activeFilters.length == 0) {
-    //     return this.mountedItems;
-    //   } else {
-    //     this.activeFilters.forEach((f) => {
-    //       this.items.forEach((i) => {
-    //         if (i.tags.includes(f.name)) {
-    //           actives.push(i);
-    //         }
-    //       });
-    //     });
-    //     return actives;
-    //   }
-    // },
+    toggleActive(x) {
+      x.isActive = !x.isActive;
+      console.log(x.isActive);
+    },
+    clearActive() {
+      this.activeFilters.forEach((x) => (x.isActive = false));
+    },
   },
 };
 </script>
