@@ -9,6 +9,7 @@
 
 ### Current items
 
+TODO: Upgrade to Nuxt 3
 TODO: Inline Mailto form inside the site
 
 ### CMS data changes:
