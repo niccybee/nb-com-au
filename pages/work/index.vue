@@ -1,9 +1,6 @@
 <template>
   <main class="work">
-    <hero
-      title="Work"
-      copy="<p>Some of my recent work in web design, dev and digital marketing.</p>"
-    >
+    <hero title="Work" copy="<p>Some of my recent work in web design, dev and digital marketing.</p>">
       <gallery :items="items"></gallery>
     </hero>
   </main>
@@ -20,6 +17,20 @@ export default {
   data() {
     return {
       items: [
+        {
+          id: 0,
+          title: "24 Hour Tan",
+          // image_url: "https://placehold.it/",
+          url: "https://24hourtan.com.au",
+          tags: ["design", "dev"],
+        },
+        {
+          id: 0,
+          title: "Nic & Georgia's Wedding",
+          // image_url: "https://placehold.it/",
+          url: "https://nicandgeorgia.com.au",
+          tags: ["design", "dev"],
+        },
         {
           id: 0,
           title: "Sunday Quiz ☀️",

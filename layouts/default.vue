@@ -1,6 +1,6 @@
 <template>
   <div class="wrap-all" @mousemove="moveFunc">
-    <Background :mouseX="mouseX" :mouseY="mouseY" />
+    <!-- <Background :mouseX="mouseX" :mouseY="mouseY" /> -->
     <header>
       <HeadDesk class="desktop-header" />
       <HeadMob class="mobile-header" />
@@ -67,19 +67,23 @@ export default {
 .page-leave-active {
   transition: opacity 0.5s;
 }
+
 .page-enter,
 .page-leave-active {
   opacity: 0;
 }
+
 /* - layout */
 /* - - all  */
 .wrap-all {
   min-height: 100vh;
   background-color: var(--highlight-100);
 }
+
 main {
   z-index: 1;
 }
+
 /* - - desktop */
 @media only screen and (min-width: 730px) {
   .wrap-all {
@@ -93,26 +97,32 @@ main {
       "left-aside main main right-aside"
       "left-aside footer footer right-aside";
   }
+
   .header {
     min-height: 3rem;
   }
+
   .desktop-header {
     position: fixed;
     top: 0;
     left: 0;
   }
+
   .mobile-header {
     display: none;
   }
+
   .hero h1 {
     font-size: 96px;
   }
+
   aside {
     /* position: fixed;
     width: 15%; */
     z-index: 2;
     /* padding-top: 3.5rem; */
   }
+
   .left-aside {
     min-height: 100%;
     left: 0;
@@ -139,6 +149,7 @@ main {
       "left-aside right-aside"
       "footer footer";
   }
+
   /* .desktop-header {
 
   } */
@@ -146,5 +157,4 @@ main {
   .right-aside {
     max-width: 49vw;
   }
-}
-</style>
+}</style>

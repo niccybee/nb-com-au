@@ -80,10 +80,8 @@ export default {
   // buildModules: ["@nuxtjs/google-fonts"],
   // googleFonts: {
   //   families: {
-  //     "DM+Serif+Text": true,
-  //     Raleway: {
-  //       wght: [100, 400],
-  //       ital: [100]
+  //     "Silkscreen": {
+  //       wght: ['400', '700'],
   //     }
   //   }
   // },

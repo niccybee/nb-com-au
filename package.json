@@ -4,9 +4,6 @@
   "description": "NicBenson.com.au",
   "author": "niccybee",
   "private": true,
-  "engines" : { 
-    "node" : ">=16.0.0 <17.0.0"
-  }
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -18,5 +15,7 @@
     "matter-js": "^0.18.0",
     "nuxt": "^2.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^3.0.0"
+  }
 }
