@@ -7902,10 +7902,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"matter-js@npm:^0.18.0":
-  version: 0.18.0
-  resolution: "matter-js@npm:0.18.0"
-  checksum: d2b0449cfb77ab78296dc4ede3843e9aabe14fa6f8819fad9caa4edaa66132177450afd47700a65ca4b00013dd7d6dd82bd750894c6383229641e181c9cc6e06
+"matter-js@npm:^0.19.0":
+  version: 0.19.0
+  resolution: "matter-js@npm:0.19.0"
+  checksum: 4245c751ce63cf4ed6b52f0beb7c043c6a93a412d67c38a8e301bca82034b48d05b11b5e122f24b12c326c5e9ccb001b25b05fdfb39d296f1dfbbdbba180477c
   languageName: node
   linkType: hard
 
@@ -8628,8 +8628,9 @@ __metadata:
   dependencies:
     "@nuxt/content": "npm:^1.14.0"
     "@nuxtjs/google-fonts": "npm:^3.0.0"
-    matter-js: "npm:^0.18.0"
+    matter-js: "npm:^0.19.0"
     nuxt: "npm:^2.0.0"
+    three: "npm:^0.152.2"
   languageName: unknown
   linkType: soft
 
@@ -12135,6 +12136,13 @@ __metadata:
   peerDependencies:
     webpack: ^4.27.0 || ^5.0.0
   checksum: ff87cef29d951cc6990ab4e548e4a28809dd019b1884db81a020ddf4ea8d9ae4159126dee82e3ac2876afdfcfb80c2f59a6ac5656a306e72beaeaf48796932ee
+  languageName: node
+  linkType: hard
+
+"three@npm:^0.152.2":
+  version: 0.152.2
+  resolution: "three@npm:0.152.2"
+  checksum: 038c320b30916bc4f122e71f9ed2cdb1d2c130e614a6a75a89a506a4bdf0c54c28e6c9b90f02d2113882c332ab4e6af8b2465706c1c7eaf5c667a4eae6961cd9
   languageName: node
   linkType: hard
 

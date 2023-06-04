@@ -1,14 +1,10 @@
 <template>
   <section class="hero" :style="bg_image ? `background-image: url(${bg_image})` : ''">
+    <Thrizzle v-if="thriz"> </Thrizzle>
     <h1>{{ title }}</h1>
     <div class="hero-copy" v-if="copy"><span v-html="copy"></span></div>
     <div v-if="cta_text">
-      <CtaButton
-        :button_name="cta.name"
-        :button_text="cta_text"
-        :button_link="cta_link"
-        :target="cta.target"
-      />
+      <CtaButton :button_name="cta.name" :button_text="cta_text" :button_link="cta_link" :target="cta.target" />
     </div>
     <slot></slot>
   </section>
@@ -16,11 +12,13 @@
 
 <script>
 import CtaButton from "@/components/add-ins/CtaButton";
+import Thrizzle from "@/components/add-ins/Thrizzle";
 export default {
   components: {
     CtaButton,
+    Thrizzle
   },
-  props: ["title", "copy", "cta_text", "cta_link", "bg_image"],
+  props: ["title", "copy", "cta_text", "cta_link", "bg_image", "thriz"],
   data() {
     return {
       cta: {
@@ -36,9 +34,11 @@ export default {
 .hero {
   z-index: 1;
 }
+
 .hero h1 {
   margin-bottom: 0.5rem;
 }
+
 .hero-copy {
   padding: 0 0 2rem 0;
 }
@@ -53,10 +53,12 @@ export default {
     justify-content: center;
     background-repeat: no-repeat;
   }
+
   .hero h1 {
     font-size: 96px;
   }
 }
+
 @media only screen and (max-width: 730px) {
   .hero {
     padding: 2rem;
@@ -66,9 +68,11 @@ export default {
     justify-content: center;
     align-items: center;
   }
+
   .hero h1 {
     font-size: 36px;
   }
+
   .hero {
     padding: 2rem;
   }

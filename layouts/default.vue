@@ -1,6 +1,6 @@
 <template>
   <div class="wrap-all" @mousemove="moveFunc">
-    <!-- <Background :mouseX="mouseX" :mouseY="mouseY" /> -->
+    <Background :mouseX="mouseX" :mouseY="mouseY" />
     <header>
       <HeadDesk class="desktop-header" />
       <HeadMob class="mobile-header" />
@@ -157,4 +157,5 @@ main {
   .right-aside {
     max-width: 49vw;
   }
-}</style>
+}
+</style>

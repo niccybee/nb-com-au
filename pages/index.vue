@@ -1,11 +1,7 @@
 <template>
   <main class="home">
-    <Hero
-      :title="HeroContents.title"
-      :copy="HeroContents.copy"
-      :cta_link="HeroContents.cta_link"
-      :cta_text="HeroContents.cta_text"
-    />
+    <Hero :title="HeroContents.title" :copy="HeroContents.copy" :cta_link="HeroContents.cta_link"
+      :cta_text="HeroContents.cta_text" :thriz="true" />
     <!-- <TextSection :text="textSect.header" :header="textSect.text" /> -->
   </main>
 </template>
