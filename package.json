@@ -16,5 +16,8 @@
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.0.0"
+  },
+  "volta": {
+    "node": "16.20.0"
   }
 }
