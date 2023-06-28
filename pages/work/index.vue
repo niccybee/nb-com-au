@@ -28,7 +28,7 @@ export default {
           id: 1,
           title: "Nic & Georgia's Wedding",
           // image_url: "https://placehold.it/",
-          url: "https://nicandgeorgia.com.au",
+          url: "https://nicandgeorgia.com",
           tags: ["design", "dev"],
         },
         {
